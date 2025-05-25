@@ -73,8 +73,8 @@ class Login {
     public boolean loginUser(String username, String password, String verifyUsername, String verifyPassword) {
     // Replace 'this.username' and 'this.password' with the actual stored values
     return this.username.equals(verifyUsername) && this.password.equals(verifyPassword);
-}
     }
+}
 
 
     
