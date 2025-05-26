@@ -253,7 +253,7 @@ public class POE_RegisterLogin {
         System.out.println("\nMessage Details:");
         System.out.println("ID: " + message.getMessageId());
         System.out.println("Hash: " + message.getMessageHash());
-        System.out.println("Recipient: " + message.getRecipient());
+        System.out.println("Recipient: " + message.getRecipientCell());
         System.out.println("Message: " + message.getContent());
         System.out.println("-----------------------------");
     }

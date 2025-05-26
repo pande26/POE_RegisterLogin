@@ -30,7 +30,7 @@ class Message {
     // Getters
     public String getMessageId() { return messageId;}
     public int getMessageNumber() { return messageNumber; }
-    public String getRecipient() { return recipient; }
+    public String getRecipientCell() { return recipient; }
     public String getContent() { return content; }
     public String getMessageHash() { return messageHash; }
 
