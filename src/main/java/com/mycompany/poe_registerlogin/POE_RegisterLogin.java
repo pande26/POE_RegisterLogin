@@ -134,6 +134,7 @@ public class POE_RegisterLogin {
             }
         }
 
+        //POE Part2
         System.out.println("Welcome to QuickChat");
         runApplication();
     }
