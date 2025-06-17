@@ -21,21 +21,20 @@ public class MessageTest {
     }
 
     @BeforeAll
-    public static void setUpClass() {
+    public static void setUpClass() throws Exception {
     }
 
     @AfterAll
-    public static void tearDownClass() {
+    public static void tearDownClass() throws Exception {
     }
 
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws Exception {
     }
 
     @AfterEach
-    public void tearDown() {
+    public void tearDown() throws Exception {
     }
-
     /**
      * Test of getMessageId method, of class Message.
      */

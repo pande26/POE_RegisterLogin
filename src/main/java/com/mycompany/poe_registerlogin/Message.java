@@ -6,12 +6,12 @@ package com.mycompany.poe_registerlogin;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author RC_Student_lab
  */
-
 class Message {
     private final String messageId;
     private final int messageNumber;
@@ -28,7 +28,7 @@ class Message {
     }
 
     // Getters
-    public String getMessageId() { return messageId;}
+    public String getMessageId() { return messageId; }
     public int getMessageNumber() { return messageNumber; }
     public String getRecipientCell() { return recipient; }
     public String getContent() { return content; }
@@ -67,7 +67,7 @@ class Message {
             file.write(json + "\n");
             file.flush();
         } catch (IOException e) {
-            System.out.println("Error storing message: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error storing message: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
