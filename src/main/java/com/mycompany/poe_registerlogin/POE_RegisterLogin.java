@@ -17,9 +17,9 @@ import java.util.regex.Pattern;
 public class POE_RegisterLogin {
     
     private static final Pattern SA_PHONE_PATTERN = Pattern.compile("^(\\+27|0)[0-9]{9}$");
-    private static int totalMessagesSent = 0;
+    static int totalMessagesSent = 0;
     
-    private static final ArrayList<String> sentMessages = new ArrayList<>();
+    static final ArrayList<String> sentMessages = new ArrayList<>();
     private static final ArrayList<String> disregardedMessages = new ArrayList<>();
     private static final ArrayList<String> storedMessages = new ArrayList<>();
     private static final ArrayList<String> messageHash = new ArrayList<>();
@@ -298,7 +298,7 @@ public class POE_RegisterLogin {
                 options[0]);
             
             switch (choice) {
-                case 0 -> addMessageAdvanced();
+                case 0 -> addMessage();
                 case 1 -> displayFullReport();
                 case 2 -> showDisregardedMessages();
                 case 3 -> loadStoredMessages();
@@ -317,7 +317,7 @@ public class POE_RegisterLogin {
         }
     }
 
-    private static void addMessageAdvanced() {
+    private static void addMessage() {
         String recipient;
         while (true) {
             recipient = JOptionPane.showInputDialog("Enter recipient's phone number:");
